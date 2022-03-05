@@ -1,0 +1,20 @@
+:root {
+  // Color Palette
+  --gray-1: #f7f8fa;
+  // Component Colors
+  --primary-color: #1890ff;
+  --primary-color-dark: #109cfa;
+  --danger-color: #f5222d;
+  --success-color: #52c41a;
+  --text-color: #212529;
+  --background-color: #f7f8fa;
+  --background-color-light: #fafafa;
+  // Font
+  --font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue',
+  Helvetica, Segoe UI, Arial, Roboto, 'PingFang SC', 'miui', 'Hiragino Sans GB',
+  'Microsoft Yahei', sans-serif;
+  --font-size-xs: 10px;
+  --font-size-sm: 12px;
+  --font-size-md: 14px;
+  --font-size-lg: 16px;
+}

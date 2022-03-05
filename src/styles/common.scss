@@ -1,0 +1,71 @@
+.reset-button {
+  @apply p-0 bg-transparent border-0;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+.border {
+  border-width: 0.5px!important;
+  border-color: var(--border-color)!important;
+  @apply border-solid;
+}
+
+.border-top {
+  border-top-width: 0.5px!important;
+  border-color: var(--border-color)!important;
+  @apply border-solid;
+}
+
+.border-left {
+  border-left-width: 0.5px!important;
+  border-color: var(--border-color)!important;
+  border-left-style: solid;
+}
+
+.border-right {
+  border-right-width: 0.5px!important;
+  border-color: var(--border-color)!important;
+  border-right-style: solid;
+}
+
+.border-bottom {
+  border-bottom-width: 0.5px!important;
+  border-color: var(--border-color)!important;
+  border-bottom-style: solid;
+}
+
+.border-top-bottom {
+  border-top-width: 0.5px!important;
+  border-bottom-width: 0.5px!important;
+  border-color: var(--border-color)!important;
+  border-top-style: solid;
+  border-bottom-style: solid;
+}
+
+// 图片自适应
+.img-responsive{
+  @apply w-full h-0;
+  /* 图片的高宽比 */
+  padding-bottom: 66.620879%;
+}
+
+// 点击区域
+.expand::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  bottom: -10px;
+  left: -10px;
+}
+
+// 彩色边框
+.gradient-border {
+  border: solid 5px transparent;
+  border-radius: 10px;
+  background-image: linear-gradient(white, white), 
+    linear-gradient(315deg,#833ab4,#fd1d1d 50%,#fcb045);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
