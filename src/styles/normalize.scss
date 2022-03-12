@@ -17,16 +17,6 @@ textarea {
   font: inherit;
 }
 
-a,
-input,
-button,
-textarea,
-[class*='van-'] {
-  &:focus {
-    outline: none;
-  }
-}
-
 ol,
 ul {
   margin: 0;

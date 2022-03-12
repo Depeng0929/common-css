@@ -18,5 +18,7 @@ const app = document.querySelector<HTMLDivElement>('#app')!
 app.innerHTML = `<article class="prose ml-2">
 <h1 class="ml-4">Styled heading!</h1>
 <blockquote>Very useful for styling markdown content!</blockquote>
+<button class="button">点我</button>
+<p>Hello world</p>
 </article>
 `
