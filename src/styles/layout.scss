@@ -2,7 +2,8 @@
 .layout {
   @apply px-14 py-10 text-[1.1rem] h-full;
 
-  pre, code {
+  pre,
+  code {
     @apply select-text;
   }
 
@@ -54,7 +55,7 @@
     @apply text-sm px-2 py-1 bg-$prism-background text-$prism-foreground border-$slidev-theme-primary border-l rounded;
   }
 
-  blockquote > * {
+  blockquote>* {
     @apply my-0;
   }
 
@@ -71,14 +72,16 @@
   }
 
   a {
-    @apply border-current border-b border-dashed hover:(text-$slidev-theme-primary border-solid);
+    @apply border-current border-b border-dashed hover: (text-$slidev-theme-primary border-solid);
   }
 
-  td, th {
+  td,
+  th {
     @apply p-2 py-3;
   }
 
-  b, strong {
+  b,
+  strong {
     @apply font-600;
   }
 

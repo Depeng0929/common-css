@@ -8,15 +8,14 @@
 
 html,
 body,
-#app{
+#app {
   padding: 0;
   margin: 0;
   width: 100%;
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   overflow: hidden;
-  -webkit-overflow-scrolling : touch
-  font-family: var(--font-family);
+  -webkit-overflow-scrolling: touch font-family: var(--font-family);
 }
 
 html {
@@ -30,5 +29,5 @@ html.dark {
 // Custom styles for tailwind.config.ts
 .button {
   background-color: var(--theme);
-  @apply px-4 py-1 rounded inline-block text-white cursor-pointer tracking-wide opacity-90 hover:opacity-100 disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50 disabled:pointer-events-none;
+  @apply px-4 py-1 rounded inline-block text-white cursor-pointer tracking-wide opacity-90 hover: opacity-100 disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50 disabled:pointer-events-none;
 }

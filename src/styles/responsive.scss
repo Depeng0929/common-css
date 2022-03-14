@@ -14,6 +14,7 @@
     margin-right: auto;
   }
 }
+
 @media(max-width: 1400px) {
   .container {
     margin-left: 160px;
@@ -28,6 +29,7 @@
     margin-right: auto;
   }
 }
+
 /* ipad pro */
 @media screen and (max-width: 1024px) {
   .container {
@@ -35,6 +37,7 @@
     margin-right: 40px;
   }
 }
+
 /* ipad */
 @media screen and (max-width: 768px) {
   .container {
@@ -42,19 +45,15 @@
     margin-right: 20px;
   }
 }
+
 /* iphone6 7 8 plus */
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 414px) {}
 
-}
 /* iphoneX */
-@media screen and (max-width: 375px) and (-webkit-device-pixel-ratio: 3) {
+@media screen and (max-width: 375px) and (-webkit-device-pixel-ratio: 3) {}
 
-}
 /* iphone6 7 8 */
-@media screen and (max-width: 375px) and (-webkit-device-pixel-ratio: 2) {
+@media screen and (max-width: 375px) and (-webkit-device-pixel-ratio: 2) {}
 
-}
 /* iphone5 */
-@media screen and (max-width: 320px) {
-
-}
+@media screen and (max-width: 320px) {}

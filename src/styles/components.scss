@@ -3,7 +3,7 @@
 //     <div class="child second"></div>
 //     <div class="child"></div>
 // </div>
-.loading {
+.custom-loading {
   margin: 50px auto;
   width: 150px;
   text-align: center;
@@ -11,7 +11,7 @@
   .child {
     width: 20px;
     height: 20px;
-    background-color: #00adb5;
+    background-color: var(--theme);
 
     border-radius: 100%;
     display: inline-block;
@@ -39,21 +39,21 @@
     100% {
       -webkit-transform: scale(0.0)
     }
-  
+
     40% {
       -webkit-transform: scale(1.0)
     }
   }
-  
+
   @keyframes bouncedelay {
-  
+
     0%,
     80%,
     100% {
       transform: scale(0.0);
       -webkit-transform: scale(0.0);
     }
-  
+
     40% {
       transform: scale(1.0);
       -webkit-transform: scale(1.0);
@@ -61,4 +61,37 @@
   }
 }
 
+// <ul class="tabs">
+//     <li>tab1</li>
+//     ...
+// </ul>
+.custom-tabs {
+  li {
+    background-color: #fff;
 
+    &::after {
+      content: "";
+      width: 0;
+      height: 2px;
+      background-color: var(--theme);
+      position: absolute;
+      left: 100%;
+      bottom: 0;
+      transition: all .4s;
+    }
+
+    &:hover {
+      color: var(--theme);
+
+      &::after {
+        width: 100%;
+        left: 0;
+        transition-delay: 0.1s;
+      }
+
+      &~li::after {
+        left: 0;
+      }
+    }
+  }
+}
