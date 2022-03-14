@@ -20,11 +20,19 @@ textarea {
 a,
 input,
 button,
-textarea,
-[class*='van-'] {
+textarea {
   &:focus {
     outline: none;
   }
+}
+
+input {
+  border: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+  outline: medium;
+  background-color: transparent;
 }
 
 ol,
