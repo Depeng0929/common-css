@@ -51,6 +51,9 @@
 }
 
 // 点击区域
+.expand {
+  position: relative;
+}
 .expand::before {
   content: "";
   position: absolute;
