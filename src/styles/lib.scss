@@ -6,3 +6,11 @@
   display: flex;
   align-items: center;
 }
+
+// colors
+.theme {
+  color: var(--theme)
+}
+.bg-theme {
+  background-color: var(--theme);
+}
