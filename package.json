@@ -1,6 +1,6 @@
 {
   "name": "@depeng9527/css",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "src/styles/index.scss",
   "style": "src/styles/index.scss",
   "files": [
