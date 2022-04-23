@@ -1,23 +1,29 @@
 {
-  "name": "common-css",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@depeng9527/css",
+  "version": "0.0.2",
+  "main": "src/styles/index.scss",
+  "style": "src/styles/index.scss",
+  "files": [
+    "LICENSE.md",
+    "src/styles"
+  ],
   "scripts": {
     "dev": "vite",
+    "release": "zx scripts/release.mjs",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
     "@unocss/preset-uno": "^0.27.2",
     "@unocss/preset-wind": "^0.27.2",
+    "@unocss/reset": "^0.27.2",
+    "fs-extra": "^10.1.0",
     "sass": "^1.49.9",
     "typescript": "^4.5.4",
     "unocss": "^0.27.2",
     "vite": "^2.8.0",
     "vite-plugin-windicss": "^1.8.2",
-    "windicss": "^3.5.1"
-  },
-  "dependencies": {
-    "@unocss/reset": "^0.27.2"
+    "windicss": "^3.5.1",
+    "zx": "^6.1.0"
   }
 }
