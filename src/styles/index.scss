@@ -31,3 +31,10 @@ html.dark {
   background: var(--dark);
 }
 
+
+// 在小程序中 replace(':', '__')
+.bth {
+  background-color: var(--theme);
+  @apply px-4 py-1 rounded inline-block text-white cursor-pointer tracking-wide opacity-90 hover:opacity-100 hover:cursor-default hover:bg-gray-600 hover:opacity-50 hover:pointer-events-none;
+}
+
