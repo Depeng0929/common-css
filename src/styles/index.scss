@@ -2,9 +2,16 @@
 @import "./common.scss";
 @import "./normalize.scss";
 @import "./mixins.scss";
-@import "./layout.scss";
-@import "./animate.scss";
-@import "./responsive.scss";
+@import "./lib.scss";
+
+// 小程序中禁用
+// @import "./layout.scss";
+// @import "./animate.scss";
+// @import "./responsive.scss";
+
+// up for you
+// @import "./lib.scss";
+
 
 html,
 body,
@@ -23,3 +30,4 @@ html {
 html.dark {
   background: var(--dark);
 }
+
