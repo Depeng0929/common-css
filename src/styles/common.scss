@@ -1,4 +1,4 @@
-.reset {
+.counter-reset {
   counter-reset: reset;
 
   .index {
@@ -7,12 +7,6 @@
       counter-increment: reset;
     }
   }
-}
-
-// 图片fill
-.fit {
-  object-fit: cover;
-  object-position: center center
 }
 
 .reset-button {
@@ -76,35 +70,8 @@
   border: 4px solid transparent;
 }
 
-// 彩色边框
-.gradient-border {
-  border: solid 5px transparent;
-  border-radius: 10px;
-  background-image: linear-gradient(white, white),
-    linear-gradient(315deg, #833ab4, #fd1d1d 50%, #fcb045);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-}
-
-// 商品卡券
-.coupon {
-  width: 300px;
-  height: 100px;
-  position: relative;
-  background: radial-gradient(circle at right top, transparent 10px, #00adb5 0) top left / 60px 51% no-repeat,
-    radial-gradient(circle at right bottom, transparent 10px, #00adb5 0) bottom left /60px 51% no-repeat,
-    radial-gradient(circle at left top, transparent 10px, #eeeeee 0) top right /240px 51% no-repeat,
-    radial-gradient(circle at left bottom, transparent 10px, #eeeeee 0) bottom right /240px 51% no-repeat;
-  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, .2));
-}
-
-.coupon::after {
-  content: '';
-  height: 80px;
-  border: 1px dashed #fff;
-  position: absolute;
-  left: 60px;
-  top: 0;
-  bottom: 0;
-  margin: auto;
+// 文字换行
+.break {
+  white-space: pre-line;
+  word-wrap: break-word;
 }

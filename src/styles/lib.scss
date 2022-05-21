@@ -14,3 +14,32 @@
 .bg-theme {
   background-color: var(--theme);
 }
+
+// 图片fill
+.fit {
+  object-fit: cover;
+  object-position: center center
+}
+
+// list-style
+.list-dot {
+  list-style-type: disc;
+}
+.list-cn {
+  list-style-type: cjk-ideographic;
+}
+.list-number {
+  list-style-type: decimal;
+}
+.list-word {
+  list-style-type: upper-alpha;
+}
+
+// 三角形
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 50px 100px 50px;
+  border-color: transparent transparent var(--theme) transparent;
+}

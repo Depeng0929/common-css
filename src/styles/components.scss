@@ -3,7 +3,7 @@
 //     <div class="child second"></div>
 //     <div class="child"></div>
 // </div>
-.custom-loading {
+.loading {
   margin: 50px auto;
   width: 150px;
   text-align: center;
@@ -93,5 +93,40 @@
         left: 0;
       }
     }
+  }
+}
+
+// 商品卡券 @see:https://qishaoxuan.github.io/css_tricks/hollowOut/#%E6%A0%B7%E5%BC%8F%E4%B8%80
+.coupon {
+  width: 300px;
+  height: 100px;
+  position: relative;
+  background: radial-gradient(circle at right top, transparent 10px, #00adb5 0) top left / 60px 51% no-repeat,
+    radial-gradient(circle at right bottom, transparent 10px, #00adb5 0) bottom left /60px 51% no-repeat,
+    radial-gradient(circle at left top, transparent 10px, #eeeeee 0) top right /240px 51% no-repeat,
+    radial-gradient(circle at left bottom, transparent 10px, #eeeeee 0) bottom right /240px 51% no-repeat;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, .2));
+
+  &::before {
+    content: '';
+    height: 80px;
+    border: 1px dashed #fff;
+    position: absolute;
+    left: 60px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    top: 0;
+    right: -5px;
+    background-image: linear-gradient(to bottom, #eeeeee 5px, transparent 5px, transparent),
+      radial-gradient(10px circle at 5px 10px, transparent 5px, #eeeeee 5px);
+    background-size: 5px 15px;
   }
 }
