@@ -11,6 +11,7 @@
 .theme {
   color: var(--theme)
 }
+
 .bg-theme {
   background-color: var(--theme);
 }
@@ -25,12 +26,15 @@
 .list-dot {
   list-style-type: disc;
 }
+
 .list-cn {
   list-style-type: cjk-ideographic;
 }
+
 .list-number {
   list-style-type: decimal;
 }
+
 .list-word {
   list-style-type: upper-alpha;
 }
@@ -39,6 +43,7 @@
 .triangle {
   width: 0;
   height: 0;
+
   border-style: solid;
   border-width: 0 50px 100px 50px;
   border-color: transparent transparent var(--theme) transparent;

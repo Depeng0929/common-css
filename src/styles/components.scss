@@ -4,17 +4,19 @@
 //     <div class="child"></div>
 // </div>
 .loading {
-  margin: 50px auto;
   width: 150px;
+  margin: 50px auto;
+
   text-align: center;
 
   .child {
     width: 20px;
     height: 20px;
+    display: inline-block;
+    border-radius: 100%;
+
     background-color: var(--theme);
 
-    border-radius: 100%;
-    display: inline-block;
     -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
     animation: bouncedelay 1.4s infinite ease-in-out;
     /* Prevent first frame from flickering when animation starts */
@@ -73,10 +75,13 @@
       content: "";
       width: 0;
       height: 2px;
+
       background-color: var(--theme);
+
       position: absolute;
       left: 100%;
       bottom: 0;
+
       transition: all .4s;
     }
 
@@ -101,6 +106,7 @@
   width: 300px;
   height: 100px;
   position: relative;
+
   background: radial-gradient(circle at right top, transparent 10px, #00adb5 0) top left / 60px 51% no-repeat,
     radial-gradient(circle at right bottom, transparent 10px, #00adb5 0) bottom left /60px 51% no-repeat,
     radial-gradient(circle at left top, transparent 10px, #eeeeee 0) top right /240px 51% no-repeat,
@@ -109,22 +115,27 @@
 
   &::before {
     content: '';
-    height: 80px;
-    border: 1px dashed #fff;
     position: absolute;
     left: 60px;
     top: 0;
     bottom: 0;
+
     margin: auto;
+
+    height: 80px;
+    border: 1px dashed #fff;
+
   }
 
   &::after {
     content: '';
     position: absolute;
-    height: 100%;
-    width: 5px;
     top: 0;
     right: -5px;
+    
+    height: 100%;
+    width: 5px;
+
     background-image: linear-gradient(to bottom, #eeeeee 5px, transparent 5px, transparent),
       radial-gradient(10px circle at 5px 10px, transparent 5px, #eeeeee 5px);
     background-size: 5px 15px;
