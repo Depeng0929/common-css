@@ -20,16 +20,15 @@ body,
   margin: 0;
   width: 100%;
   height: 100vh;
+  // see https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
   height: calc(var(--vh, 1vh) * 100);
 }
 
 html {
-  background: transparent;
+  @apply bg-white dark:bg-dark-100;
+  @apply text-gray-900 dark:text-gray-300;
 }
 
-html.dark {
-  background: var(--dark);
-}
 
 
 // 在小程序中 replace(':', '__')

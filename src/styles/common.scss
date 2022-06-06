@@ -29,33 +29,37 @@
   }
 }
 
+.border-base {
+  @apply border-gray-200 dark:border-dark-200;
+}
+
 .border {
+  @extend .border-base;
   border-width: 0.5px !important;
-  border-color: var(--border-color) !important;
   border-style: solid;
 }
 
 .border-top {
+  @extend .border-base;
   border-top-width: 0.5px !important;
-  border-color: var(--border-color) !important;
   border-style: solid;
 }
 
 .border-left {
+  @extend .border-base;
   border-left-width: 0.5px !important;
-  border-color: var(--border-color) !important;
   border-style: solid;
 }
 
 .border-right {
+  @extend .border-base;
   border-right-width: 0.5px !important;
-  border-color: var(--border-color) !important;
   border-right-style: solid;
 }
 
 .border-bottom {
+  @extend .border-base;
   border-bottom-width: 0.5px !important;
-  border-color: var(--border-color) !important;
   border-bottom-style: solid;
 }
 
@@ -65,6 +69,15 @@
   border-color: var(--border-color) !important;
   border-top-style: solid;
   border-bottom-style: solid;
+}
+
+html.dark {
+  .color-fade {
+    color:rgba(209,213,219,0.5);
+  }
+}
+.color-fade {
+  color:rgba(17,24,39,0.5);
 }
 
 // 点击区域
