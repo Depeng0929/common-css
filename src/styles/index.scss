@@ -1,8 +1,8 @@
-@import "./vars.scss";
-@import "./common.scss";
-@import "./normalize.scss";
-@import "./mixins.scss";
-@import "./lib.scss";
+@use "./vars.module.scss" as vars;
+@use "./common.scss" as *;
+@use "./normalize.scss" as *;
+@use "./mixins.scss" as *;
+@use "./lib.scss" as *;
 
 // 小程序中禁用
 // @import "./layout.scss";
@@ -33,7 +33,7 @@ html {
 
 // 在小程序中 replace(':', '__')
 .bth {
-  background-color: var(--theme);
+  background-color: vars.$theme;
   @apply px-4 py-1 rounded inline-block text-white cursor-pointer tracking-wide opacity-90 hover:opacity-100 hover:cursor-default hover:bg-gray-600 hover:opacity-50 hover:pointer-events-none;
 }
 

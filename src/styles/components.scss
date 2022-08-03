@@ -1,3 +1,4 @@
+@use "./vars.module.scss" as vars;
 // <div class="loading">
 //     <div class="child first"></div>
 //     <div class="child second"></div>
@@ -15,7 +16,7 @@
     display: inline-block;
     border-radius: 100%;
 
-    background-color: var(--theme);
+    background-color: vars.$theme;
 
     -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
     animation: bouncedelay 1.4s infinite ease-in-out;
@@ -76,7 +77,7 @@
       width: 0;
       height: 2px;
 
-      background-color: var(--theme);
+      background-color: vars.$theme;
 
       position: absolute;
       left: 100%;
@@ -86,7 +87,7 @@
     }
 
     &:hover {
-      color: var(--theme);
+      color: vars.$theme;
 
       &::after {
         width: 100%;
