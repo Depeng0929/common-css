@@ -9,58 +9,44 @@
   }
 }
 
-.reset-button {
-  font-size: inherit;
-  line-height: inherit;
-  color: inherit;
-  
-  padding: 0;
-  border: 0 none;
-
-  background-color: transparent;
-  cursor: pointer;
+.reset-button {  
+  @apply p-0 border-0 bg-transparent cursor-pointer;
 
   &:disabled {
     opacity: 0.5;
   }
-
   &:hover {
     opacity: 0.9;
   }
 }
 
 .border-base {
-  @apply border-gray-200 dark:border-dark-200;
+  @apply border-gray-200 dark:border-dark-200 border-solid;
 }
+
 
 .border {
   @extend .border-base;
-  border-width: 0.5px !important;
-  border-style: solid;
 }
 
 .border-top {
   @extend .border-base;
   border-top-width: 0.5px !important;
-  border-style: solid;
 }
 
 .border-left {
   @extend .border-base;
   border-left-width: 0.5px !important;
-  border-style: solid;
 }
 
 .border-right {
   @extend .border-base;
   border-right-width: 0.5px !important;
-  border-right-style: solid;
 }
 
 .border-bottom {
   @extend .border-base;
   border-bottom-width: 0.5px !important;
-  border-bottom-style: solid;
 }
 
 .border-top-bottom {

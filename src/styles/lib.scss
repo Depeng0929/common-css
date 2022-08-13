@@ -5,8 +5,7 @@
 }
 
 .flex-center {
-  display: flex;
-  align-items: center;
+  @apply flex items-center;
 }
 
 // colors
