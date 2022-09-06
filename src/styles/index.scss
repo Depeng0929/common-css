@@ -1,8 +1,7 @@
 @use "./vars.module.scss" as vars;
+// @use "./normalize.scss" as *;
 @use "./common.scss" as *;
-@use "./normalize.scss" as *;
 @use "./mixins.scss" as *;
-@use "./lib.scss" as *;
 
 // 小程序中禁用
 // @import "./layout.scss";
