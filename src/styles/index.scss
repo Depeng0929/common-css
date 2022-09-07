@@ -12,24 +12,17 @@
 // @import "./lib.scss";
 
 
-html,
 body,
 #app{
-  @apply p-0 m-0 w-full h-screen bg-[#F2F2F2];
+  @apply p-0 m-0 w-full h-screen;
   // see https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
   height: calc(var(--vh, 1vh) * 100);
 }
 
-// use this in minapp
-page,body {
+html,page {
+  @apply bg-[#F2F2F2] text-[#181818] dark:(bg-[#121212] text-[#ddd]);
   height: 100%;
 }
-
-html {
-  @apply text-[#181818] dark:(bg-[#121212] text-[#ddd]);
-}
-
-
 
 // 在小程序中 replace(':', '__')
 .bth {
