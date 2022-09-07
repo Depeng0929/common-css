@@ -14,14 +14,15 @@
 
 html,
 body,
-#app {
-  @apply p-0 m-0 w-full h-screen;
+#app,
+page {
+  @apply p-0 m-0 w-full h-screen bg-[#F2F2F2];
   // see https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
   height: calc(var(--vh, 1vh) * 100);
 }
 
 html {
-  @apply bg-white text-[#181818] dark:(bg-[#121212] text-[#ddd]);
+  @apply text-[#181818] dark:(bg-[#121212] text-[#ddd]);
 }
 
 
