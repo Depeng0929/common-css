@@ -31,7 +31,9 @@
 
 .border-top {
   @extend .border-base;
-  border-top-width: 0.5px !important;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
 }
 
 .border-left {
@@ -41,20 +43,22 @@
 
 .border-right {
   @extend .border-base;
-  border-right-width: 0.5px !important;
+  border-bottom: 0;
+  border-top: 0;
+  border-left: 0;
 }
 
 .border-bottom {
   @extend .border-base;
-  border-bottom-width: 0.5px !important;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
 }
 
 .border-top-bottom {
-  border-top-width: 0.5px !important;
-  border-bottom-width: 0.5px !important;
-  border-color: var(--border-color) !important;
-  border-top-style: solid;
-  border-bottom-style: solid;
+  @extend .border-base;
+  border-left: 0;
+  border-right: 0;
 }
 
 html.dark {
